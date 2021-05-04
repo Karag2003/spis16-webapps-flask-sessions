@@ -3,11 +3,18 @@
 {% block title %}Page 2: Ask for your favorite color{% endblock %}
 
 {% block content %}
-  <h1>Page 2: Ask for favorite color</h1>
+  <h1>Solve For x Using The Substitution Method:</h1>
+  
+  <p>Example For how to use Substitution:<a href="https://www.youtube.com/watch?v=xzuouSZ69XU" target ="_blank">Click Here</a></p>
+  
+  <p>y=x-4
+  <br>
+  x+y=10
+  </p>
 
  <form action={{ url_for("renderPage3") }} method="POST">
-  Favorite Color:<br>
-  <input type="text" name="favoriteColor">
+  x = 
+  <input type="text" name="x2">
   <input type="submit" value="Submit">
  </form> 
 

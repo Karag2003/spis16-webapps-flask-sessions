@@ -28,13 +28,16 @@ def renderPage1():
 
 @app.route('/page2',methods=['GET','POST'])
 def renderPage2():
-    session["firstName"]=request.form['firstName']
-    session["lastName"]=request.form['lastName']
+    if not session.get("q2"):
+        session["q2"]=True
+        session["x"]=request.form['x']
     return render_template('page2.html')
-
+    
 @app.route('/page3',methods=['GET','POST'])
 def renderPage3():
-    session["favoriteColor"]=request.form['favoriteColor']
+    if not session.get("q3"):
+        session["q3"]=True
+        session["x2"]=request.form['x2']
     return render_template('page3.html')
     
 if __name__=="__main__":

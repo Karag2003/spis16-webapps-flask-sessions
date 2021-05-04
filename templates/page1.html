@@ -3,14 +3,13 @@
 {% block title %}Page 1: Name{% endblock %}
 
 {% block content %}
-  <h1>Page 1: What is your name?</h1>
+  <h1>Solve For x:</h1>
+  
+  <p>3x=6</p>
 
  <form action={{ url_for("renderPage2") }} method="POST">
-  First name:<br>
-  <input type="text" name="firstName">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastName">
+    x = 
+    <input type="text" name="x">
   <input type="submit" value="Submit">
  </form> 
 
